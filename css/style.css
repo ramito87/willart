@@ -161,6 +161,10 @@ a:visited {
     opacity: 1;
 }
 
+.item{
+  list-style-type: none;
+}
+
 .item:target .submenu{
     max-height: 20rem;
 }
