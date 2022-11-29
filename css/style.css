@@ -20,6 +20,12 @@ body {
   color: white;
   font-family: "geo";
 }
+.content {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+
 
 a {
   color: white;
@@ -30,24 +36,23 @@ a:visited {
   color: white;
 }
 
-
-
 /* barra de navegacion */
 
-.logo-nav{
-    width: 500px;
-    transition: all 600ms;
-
+.logo-nav {
+  width: 400px;
+  transition: all 600ms;
 }
 #nav {
   width: 100%;
-  height: 100%;
-  padding-top: 50px;
-  padding-right: 10px;
+  height: 100px;
+  padding-top: 20px;
   background-color: black;
   color: white;
   font-family: "geo";
   font-size: 25px;
+  position:fixed;
+	z-index:1000;
+	top:0;
 }
 
 #nav ul {
@@ -58,9 +63,9 @@ a:visited {
 }
 
 #nav > ul > li {
-  
   float: right;
-  transition: all 600ms;
+  margin-top: 25px;
+  /* transition: all 600ms; */
 }
 
 #nav > ul > li a {
@@ -86,85 +91,86 @@ a:visited {
   color: black;
 }
 
-.logo-nav a:hover{
-    width: 1000px;
+.logo-nav a:hover {
+  width: 1000px;
 }
 
 
 /* Contenido central */
-.central{
-    float: left;
-    background-image:url(../img/Malinche.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1250px;
-    min-height: 1100px;
-    margin: 20px auto;
+.central {
+  float: left;
+  background-image: url(../img/Malinche.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80%;
+  min-height:800px;
+  margin: 20px auto;
 }
 
 /* aside */
-.aside{
-    width: 200px;
-    min-height: 1100px;
-    float: right;
-    background-color: black;
-    font-family: "geo";
+.aside {
+  width: 20%;
+  min-height: 500px;
+  float: right;
+  background-color: black;
+  font-family: "geo";
   font-size: 25px;
 }
 
-
-.menu{
-    width: 100%;
-    height: auto;
-    background: black;
-    overflow: hidden;
+.menu {
+  margin-top: 150px;
+  width: 100%;
+  height: auto;
+  background: black;
+  overflow: hidden;
 }
 
-.menu .btn{
-    display:block;
-    padding: 1rem;
-    position: relative;
+.menu .btn {
+  display: block;
+  padding: 1rem;
+  position: relative;
 }
 
 .menu .submenu {
-    background: #eee;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .8s ease-out;
+  background: #eee;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.8s ease-out;
 }
 
-.menu .submenu a{
-    display:block;
-    color: black;
-    padding: 1rem;
-    position: relative;
-    text-align: right;
+.menu .submenu a {
+  display: block;
+  color: black;
+  padding: 1rem;
+  position: relative;
+  text-align: right;
 }
 
-.menu .submenu a::before{
-    content:'';
-    display:block;
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width: 5px;
-    opacity: 0;
-    transition: all .5s;
+.menu .submenu a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
-.menu .submenu a:hover{
-    padding-left: calc(1rem + 5px);
+.menu .submenu a:hover {
+  padding-left: calc(1rem + 5px);
 }
 
-.menu .submenu a:hover::before{
-    opacity: 1;
+.menu .submenu a:hover::before {
+  opacity: 1;
 }
 
-.item{
+.item {
   list-style-type: none;
 }
 
-.item:target .submenu{
-    max-height: 20rem;
+.item:target .submenu {
+  max-height: 20rem;
 }
