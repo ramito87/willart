@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Geomanist';
-    src: url('../assets/font/Geomanist-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../assets/font/Geomanist-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../assets/font/Geomanist-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/font/Geomanist-Regular.woff') format('woff'); /* Modern Browsers */
+    src: url('./assets/font/Geomanist-Regular.eot'); /* IE9 Compat Modes */
+    src: url('./assets/font/Geomanist-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/font/Geomanist-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/font/Geomanist-Regular.woff') format('woff'); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
