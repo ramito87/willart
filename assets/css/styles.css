@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('/assets/font/Geomanist-Regular.eot'); /* IE9 Compat Modes */
+    src: url('/assets/font/Geomanist-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/font/Geomanist-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/font/Geomanist-Regular.woff') format('woff'); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --cp:black;
+  --cs:white;
+}
+
+/* Estilos generales */
+
+html,
+body {
+    font-family: "Geomanist";
+    font-weight: 400;
+    height: 100%;
+    background-color: var(--cp);
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*::first-letter{
+  text-transform: uppercase;
+}
+
+
+
+
+
+  
+main {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  /* border-top: 20px dashed var(--cs);
+  border-bottom: 20px dashed var(--cs); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 2px;
+    padding: 2px 10px;
+}
+
+h1 {
+  color: var(--cs);
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 80px 0 30px 0;
+}
+
+p {
+  color: var(--cs);
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* MENU DE NAVEGACION */
+nav {
+  width: 100%;
+  height: auto;
+  color: var(--cs);
+  background-color: var(--cp);
+  padding: 10px;
+  padding-top: 20PX;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logo-nav {
+  width: 100%;
+  transition: all 600ms;
+}
+
+nav li.logo-item {
+  margin-right: auto; /* Mueve el logo a la izquierda */
+  width: 300px;
+}
+
+
+
+nav li {
+  /* text-align: center; */
+  padding: 11px;
+  min-width: 100px;
+  border-radius: 5px;
+}
+
+nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cs);
+  display: block;
+  font-size: 15px;
+  padding: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+nav li a:hover {
+  background-color: var(--cs);
+  color: var(--cp);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* seccion inicio */
+
+#inicio {
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+#inicio img{
+  height: 85vh;
+  width: 50%;
+}
+
+
+/* biografia */
+
+#biografia{
+  text-align: center;
+  padding: 100px 0 0 0;
+  color: var(--cs);
+}
+
+.centrar {
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+}
+
+.col-2 {
+  display: inline-block;
+  width: 48%;
+  height: 200px;
+}
+
+/* galeria */
+.gallery-block{
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.cards-gallery h6 {
+  font-size: 17px;
+  font-weight: bold; 
+}
+
+.gallery-block.cards-gallery .card{
+  transition: 0.4s ease; 
+}
+
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
+  height: 300px;
+  
+}
+
+.gallery-block.cards-gallery .card-body {
+  text-align: center; 
+}
+
+.gallery-block.cards-gallery .card-body p {
+  font-size: 15px; 
+}
+
+.gallery-block.cards-gallery a {
+  color: #212529; 
+}
+
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none; 
+}
+
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
