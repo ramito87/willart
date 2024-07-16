@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Orozco Art</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsibe">
+</head>
+
+<body>
+
+    <!-- Inicio barra menu -->
+    <nav>
+        <ul class="menu">
+            <li class="logo-item">
+                <a href="index.html">
+                    <img class="logo-nav" src="assets/img/Logo.jpeg" alt="Logo Will Art" />
+                </a>
+            </li>
+            <li><a href="biografia.html">Biografía</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Fin barra menu -->
+
+    <!-- seccion inicio -->
+    <main>
+
+        <section class="gallery-block cards-gallery">
+            <div class="container">
+                <div class="heading">
+                    <h2>Galeria</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="assets/img/angel_caido.jpeg">
+                                <img src="assets/img/angel_caido.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="assets/img/angelus.jpeg">
+                                <img src="assets/img/angelus.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="assets/img/arcangelus.jpeg">
+                                <img src="assets/img/arcangelus.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="assets/img/ascencion.jpeg">
+                                <img src="assets/img/ascencion.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="assets/img/atrabilis.jpeg">
+                                <img src="assets/img/atrabilis.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="assets/img/cronos.jpeg">
+                                <img src="assets/img/cronos.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.cards-gallery', {
+            animation: 'slideIn', // Configuración de animación
+            captions: function (element) { // Función para mostrar leyendas
+                return element.getElementsByTagName('img')[0].alt;
+            },
+            buttons: false // Desactivar los botones de navegación
+        });
+    </script>
+</body>
+
+</html>
